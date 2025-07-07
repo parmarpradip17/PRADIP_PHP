@@ -45,10 +45,10 @@
 
 
 
-// echo "Today is " . date("d/m/Y") . "<br>";
-// echo "Today is " . date("d.m.Y") . "<br>";
-// echo "Today is " . date("d-m-Y") . "<br>";
-// echo "Today is " . date("l") . "<br>  <br>";
+echo "Today is " . date("d/m/Y") . "<br>";
+echo "Today is " . date("d.m.Y") . "<br>";
+echo "Today is " . date("d-m-Y") . "<br>";
+echo "Today is " . date("l") . "<br>  <br>";
 
 
 //! PHP Tip - Automatic Copyright Year
@@ -71,13 +71,13 @@
 //? The example below outputs the current time in the specified format:
 
 
-// echo "The time is " . date("h:i:sa") . "<br><br><br><br>";
-// echo "The time is H - 24-hour format of an hour (00 to 23)  &nbsp ========>    " . date("H") . "<br><br><br><br> ";
-// echo "The time is h - 12-hour format of an hour with leading zeros (01 to 12)   &nbsp ========>    " . date("h") . "<br><br><br><br> ";
-// echo "The time is i - Minutes with leading zeros (00 to 59) &nbsp ========>    " . date("i") . "<br><br><br><br> ";
-// echo "The time is s - Seconds with leading zeros (00 to 59) &nbsp ========>    " . date("s") . "<br><br><br><br> ";
-// echo "The time is a - Lowercase Ante meridiem and Post meridiem (am or pm)  &nbsp ========>    " . date("a") . "<br><br><br><br> ";
-// echo "The time is " . date("h:i:sa") . "<br>";
+echo "The time is " . date("h:i:sa") . "<br><br><br><br>";
+echo "The time is H - 24-hour format of an hour (00 to 23)  &nbsp ========>    " . date("H") . "<br><br><br><br> ";
+echo "The time is h - 12-hour format of an hour with leading zeros (01 to 12)   &nbsp ========>    " . date("h") . "<br><br><br><br> ";
+echo "The time is i - Minutes with leading zeros (00 to 59) &nbsp ========>    " . date("i") . "<br><br><br><br> ";
+echo "The time is s - Seconds with leading zeros (00 to 59) &nbsp ========>    " . date("s") . "<br><br><br><br> ";
+echo "The time is a - Lowercase Ante meridiem and Post meridiem (am or pm)  &nbsp ========>    " . date("a") . "<br><br><br><br> ";
+echo "The time is " . date("h:i:sa") . "<br>";
 
 
 //! Note that the PHP date() function will return the current date/time of the server!
@@ -102,8 +102,8 @@
 
 
 
-// $d = mktime(11, 14, 54, 8, 12, 2014);
-// echo "Created date is " . date("Y-m-d h:i:sa", $d);
+$d = mktime(11, 14, 54, 8, 12, 2014);
+echo "Created date is " . date("Y-m-d h:i:sa", $d);
 
 //! Create a Date From a String With strtotime()
 
