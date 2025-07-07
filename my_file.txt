@@ -1,0 +1,14 @@
+Hello, this is a test file.
+Written using PHP file handling.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
+This line is appended using PHP.
