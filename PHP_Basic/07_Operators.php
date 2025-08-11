@@ -43,11 +43,11 @@
 // $remainder = $a % $b;
 // echo "Modulus: $a % $b = $remainder <br> "; // Output: 1
 
-//! **	Exponentiation      
-//?  $x ** $y	Result of raising $x to the $y'th power
+//! 	Exponentiation      
+//?  $x  $y	Result of raising $x to the $y'th power
 
-// $Result = $a ** $b;
-// echo "Modulus: $a ** $b = $Result <br><br> "; // Output: 1
+// $Result = $a  $b;
+// echo "Modulus: $a  $b = $Result <br><br> "; // Output: 1
 
 
 
@@ -272,12 +272,12 @@ $y = 50;
 //     echo "Hello world!";
 // }
 
-//! ||	
+//?! |	
 //? Or
-//* $x || $y	
+//?* $x | $y	
 //? True if either $x or $y is true	
 
-// if ($x || $y) {
+//? if ($x | $y) {
 //     echo "Hello world!";
 // }
 
@@ -375,4 +375,160 @@ $y = 50;
 // echo "OR (||): " . ($a || $b) . "<br>";    // true
 // echo "NOT (!): " . (!$a) . "<br>";         // false
 // echo "XOR: " . ($a xor $b) . "<br>";       // true
+
+
+
+
+
+
+
+
+
+//! 1. Arithmetic Operators
+
+// Used for basic math calculations.
+
+//*  Operator  Name            Example     Result                    
+
+//?  `+`       Addition        `$x + $y`   Sum of `$x` and `$y`      
+//?  `-`       Subtraction     `$x - $y`   Difference                
+//?  `*`       Multiplication  `$x * $y`   Product                   
+//?  `/`       Division        `$x / $y`   Quotient                  
+//?  `%`       Modulus         `$x % $y`   Remainder                 
+//?  `**`      Exponentiation  `$x ** $y`  `$x` to the power of `$y` 
+
+//! 2. Assignment Operators
+
+// Used to assign and modify variables.
+
+//*  Operator  Meaning              Example     Equivalent To  
+
+//?  `=`       Assign               `$x = 5`    `$x = 5`       
+//?  `+=`      Add and assign       `$x += 3`   `$x = $x + 3`  
+//?  `-=`      Subtract and assign  `$x -= 2`   `$x = $x - 2`  
+//?  `*=`      Multiply and assign  `$x *= 4`   `$x = $x * 4`  
+//?  `/=`      Divide and assign    `$x /= 2`   `$x = $x / 2`  
+//?  `%=`      Modulus and assign   `$x %= 3`   `$x = $x % 3`  
+//?  `=`     Power and assign     `$x = 3`  `$x = $x  3` 
+
+//! 3. Comparison Operators
+
+// Used to compare two values.
+
+//*  Operator  Name                   Example      Result                           
+
+//?  `==`      Equal                  `$x == $y`   true if values are equal         
+//?  `===`     Identical              `$x === $y`  true if value & type match       
+//?  `!=`      Not equal              `$x != $y`   true if values differ            
+//?  `<>`      Not equal              `$x <> $y`   same as `!=`                     
+//?  `!==`     Not identical          `$x !== $y`  true if value or type differs    
+//?  `>`       Greater than           `$x > $y`    true if `$x` is bigger           
+//?  `<`       Less than              `$x < $y`    true if `$x` is smaller          
+//?  `>=`      Greater than or equal  `$x >= $y`   true if `$x` is bigger or equal  
+//?  `<=`      Less than or equal     `$x <= $y`   true if `$x` is smaller or equal 
+//?  `<=>`     Spaceship              `$x <=> $y`  -1, 0, or 1                      
+
+//! 4. Increment / Decrement Operators
+
+// Change variable values by one.
+
+//*  Operator  Name            Example  Effect                
+
+//?  `++$x`    Pre-increment   `++$x`   Increase, then return 
+//?  `$x++`    Post-increment  `$x++`   Return, then increase 
+//?  `--$x`    Pre-decrement   `--$x`   Decrease, then return 
+//?  `$x--`    Post-decrement  `$x--`   Return, then decrease 
+
+//! 5. Logical Operators
+
+// Used for combining conditions.
+
+//*  Operator  Name         Example      Result                                                         
+
+//?  `and`     Logical AND  `$x and $y`  true if both true                                              
+//?  `or`      Logical OR   `$x or $y`   true if one is true                                            
+//?  `xor`     Logical XOR  `$x xor $y`  true if only one is true                                       
+//?  `&&`      Logical AND  `$x && $y`   true if both true                                              
+//?  \`                     \`           Logical OR                \`\$x     \$y\`  true if one is true 
+//?  `!`       Logical NOT  `!$x`        true if `$x` is false                                          
+
+//! 6. String Operators
+
+// For working with text.
+
+//*  Operator  Name                    Example     Result          
+
+//?  `.`       Concatenation           `$x . $y`   Joins strings   
+//?  `.=`      Concatenate and assign  `$x .= $y`  Appends to `$x` 
+
+//! 7. Array Operators
+
+// Used to compare or combine arrays.
+
+//*  Operator  Name           Example      Result                               
+
+//?  `+`       Union          `$a + $b`    Combines arrays                      
+//?  `==`      Equal          `$a == $b`   true if same key/value pairs         
+//?  `===`     Identical      `$a === $b`  true if same keys, values, and order 
+//?  `!=`      Not equal      `$a != $b`   true if different                    
+//?  `<>`      Not equal      `$a <> $b`   same as `!=`                         
+//?  `!==`     Not identical  `$a !== $b`  true if not exactly the same         
+
+//! 8. Type Operators
+
+// Used for type checking.
+
+//*  Operator      Name            Example                    Result                                           
+
+//?  `instanceof`  Instance check  `$obj instanceof MyClass`  true if object is an instance of class/interface 
+
+//! 9. Bitwise Operators
+
+// Operate on bits.
+
+//*  Operator  Name         Example    Result                                        
+
+//?  `&`       AND          `$x & $y`  Bits set in both                              
+//?  \`        \`           OR         `$x \ $y`                 Bits set in either 
+//?  `^`       XOR          `$x ^ $y`  Bits set in one, not both                     
+//?  `~`       NOT          `~$x`      Inverts bits                                  
+//?  `<<`      Shift left   `$x << 2`  Shift bits left                               
+//?  `>>`      Shift right  `$x >> 2`  Shift bits right                              
+
+//! 10. Execution Operators
+
+// Used to execute shell commands.
+
+//*  Operator         Example         Effect                                    
+
+//?  `` `command` ``  ``echo `ls`;``  Executes shell command and returns output 
+
+//! 11. Error Control Operator
+
+// Suppresses errors.
+
+//*  Operator  Example                           Effect               
+
+//?  `@`       `@file_get_contents('file.txt')`  Hides error messages 
+
+//! 12. Null Coalescing Operators
+
+// Introduced in PHP 7.
+
+//*  Operator  Example                           Effect                               
+
+//?  `??`      `$x = $_GET['id'] ?? 'default';`  Returns left if set, otherwise right 
+//?  `??=`     `$var ??= 'default';`             Assigns if null                      
+
+//! 13. Ternary Operator
+
+// Short if-else.
+
+//*  Operator  Example                           Result           
+
+//?  `?:`      `$x = ($y > 10) ? 'Yes' : 'No';`  Yes if `$y > 10` 
+
+// If you want, I can turn this into a printable PHP Operators Cheat Sheet with all these tables formatted for quick reference. That would make it easier for studying or interviews.
+
+
 ?>

@@ -182,4 +182,26 @@
 
 //* The magic constants are case-insensitive, meaning __LINE__ returns the same as __line__.
 
+
+
+
+// $n = 50;
+
+// for ($i = 1; $i <= $n; $i++) {   // Outer loop controls rows
+//     for ($j = 1; $j <= $i; $j++) { // Inner loop prints numbers in each row
+//         echo $j;
+//     }
+//     echo "<br>";
+// }
+
+
+
+// for ($i = 0; $i <= $n; $i++) {
+
+//     for ($j = 0; $j <= $i; $j++) {
+//         echo "* ";
+//     }
+// echo "<br>";
+// }
+
 ?>

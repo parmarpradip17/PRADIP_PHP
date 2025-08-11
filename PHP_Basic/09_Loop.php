@@ -184,13 +184,50 @@
 
 
 
-$colors = array("red", "green", "blue", "yellow");
+// $colors = array("red", "green", "blue", "yellow");
 
-foreach ($colors as $x) {
-  if ($x == "blue") $x = "pink";
-}
+// foreach ($colors as $x) {
+//   if ($x == "blue") $x = "pink";
+// }
 
-var_dump($colors);
+// var_dump($colors);
+
+
+
+//! 🔁 Loops in PHP
+//* Loops are used to execute a block of code multiple times.
+
+//* In PHP, we have the following loop types:
+
+//! 1️⃣ while loop
+//? Loops through a block of code as long as the specified condition is true.
+// $i = 1;
+// while ($i <= 5) {
+//   echo "While Loop: $i" . "<br>";
+//   $i++;
+// }
+
+//! 2️⃣ do...while loop
+//? Loops through a block of code once, then repeats the loop as long as the specified condition is true.
+// $j = 1;
+// do {
+//   echo "Do-While Loop: $j" . "<br>";
+//   $j++;
+// } while ($j <= 5);
+
+//! 3️⃣ for loop
+//? Loops through a block of code a specified number of times.
+// for ($k = 1; $k <= 5; $k++) {
+//   echo "For Loop: $k" . "<br>";
+// }
+
+//! 4️⃣ foreach loop
+//? Loops through a block of code for each element in an array.
+// $fruits = ["Apple", "Banana", "Cherry"];
+// foreach ($fruits as $fruit) {
+//   echo "Foreach Loop: $fruit" . "<br>";
+// }
+
 
 ?>
 <?php ?>

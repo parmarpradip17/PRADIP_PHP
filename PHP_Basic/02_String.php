@@ -151,7 +151,7 @@
 // echo strncasecmp("Hello world!", "hello world", 12);
 
 
-$name = "";
+// $name = "";
 
 //!  Function       Description                  Example                     
 

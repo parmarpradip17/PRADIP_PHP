@@ -186,17 +186,17 @@
 
 
 
-//*  Indexed array
-$colors = ["red", "green", "blue"];
+// //*  Indexed array
+// $colors = ["red", "green", "blue"];
 
-//*  Associative array
-$person = ["name" => "Alice", "age" => 30];
+// //*  Associative array
+// $person = ["name" => "Alice", "age" => 30];
 
-//*  Multidimensional array
-$people = [
-    ["name" => "John", "age" => 25],
-    ["name" => "Jane", "age" => 28]
-];
+// //*  Multidimensional array
+// $people = [
+//     ["name" => "John", "age" => 25],
+//     ["name" => "Jane", "age" => 28]
+// ];
 
 
 

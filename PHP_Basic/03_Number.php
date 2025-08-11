@@ -15,18 +15,18 @@
 
 
 
-$a = 5;
-$b = 5.34;
-$c = "25";
+// $a = 5;
+// $b = 5.34;
+// $c = "25";
 
-var_dump($a);
-echo "<hr>";
+// var_dump($a);
+// echo "<hr>";
 
-var_dump($b);
-echo "<hr>";
+// var_dump($b);
+// echo "<hr>";
 
-var_dump($c);
-echo "<hr>";
+// var_dump($c);
+// echo "<hr>";
 
 
 

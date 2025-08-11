@@ -12,7 +12,7 @@
 //? $_ENV
 //? $_COOKIE
 //? $_SESSION
-
+ 
 //*  Superglobal        Purpose                              
 
 //?  $GLOBALS       Access global variables in any scope 
