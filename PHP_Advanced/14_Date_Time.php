@@ -2,18 +2,9 @@
 
 //! PHP Date and Time
 
-
-
-
-
 //? The PHP date() function is used to format a date and/or a time.
 
-
-
-
-
 //! The PHP Date() Function
-
 
 //? The PHP date() function formats a timestamp to a more readable date and time.
 
@@ -102,8 +93,9 @@ echo "The time is " . date("h:i:sa") . "<br>";
 
 
 
-$d = mktime(11, 14, 54, 8, 12, 2014);
-echo "Created date is " . date("Y-m-d h:i:sa", $d);
+// echo "<hr><hr><hr><hr><hr><hr><hr><hr><hr>";
+// $d = mktime(11, 14, 54, 8, 12, 2014);
+// echo "Created date is " . date("Y-m-d h:i:sa", $d);
 
 //! Create a Date From a String With strtotime()
 
@@ -112,16 +104,16 @@ echo "Created date is " . date("Y-m-d h:i:sa", $d);
 
 //* Syntax
 
-// strtotime(time, now)
+// strtotime(time, now);
 
-
+// echo "<hr><hr><hr><hr><hr><hr><hr><hr><hr>";
 // $d = strtotime("10:30pm April 15 2025");
 // echo "created date is " . date("Y-m-d h:i:sa", $d);
 
 
 //! PHP is quite clever about converting a string to a date
 
-// $d = strtotime("tomorrow");
+// $d = strtotime("17-06-2005 12:01:12AM");
 // echo date("Y-m-d h:i:sa", $d) . "<br>";
 
 // $d = strtotime("next Saturday");

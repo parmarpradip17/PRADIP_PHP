@@ -35,7 +35,10 @@
 
 
 
-// if (setcookie("user", "", time() - 3600)) {
+// setcookie("price","300", time()+(86400 * 30) , "/");
+
+
+// if (setcookie("price", "", time() - 3600)) {
 //     echo "cookie was deleted <br>";
 // }
 
@@ -72,6 +75,7 @@
 
 // // Get cookie
 // echo $_COOKIE["user"];
+// echo $_COOKIE["price"];
 // ```
 
 

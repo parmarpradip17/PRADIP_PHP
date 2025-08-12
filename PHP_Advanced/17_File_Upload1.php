@@ -50,7 +50,6 @@ if (isset($_POST["submit"]) && isset($_FILES["img_upload"])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,13 +57,11 @@ if (isset($_POST["submit"]) && isset($_FILES["img_upload"])) {
 </head>
 
 <body>
-
     <form action="17_File_Upload1.php" method="post" enctype="multipart/form-data">
         Select image to upload:
         <input type="file" name="img_upload">
         <input type="submit" value="Upload Image" name="submit">
     </form>
-
 </body>
 
 </html>

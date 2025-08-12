@@ -186,13 +186,13 @@
 
 
 
-// //*  Indexed array
+// //??*  Indexed array
 // $colors = ["red", "green", "blue"];
 
-// //*  Associative array
+// //??*  Associative array
 // $person = ["name" => "Alice", "age" => 30];
 
-// //*  Multidimensional array
+// //??*  Multidimensional array
 // $people = [
 //     ["name" => "John", "age" => 25],
 //     ["name" => "Jane", "age" => 28]
@@ -424,7 +424,7 @@
 // $filled = array_fill(0, 4, "pradip");
 // print_r($filled);
 
-// //Result: [0 => "PHP", 1 => "PHP", 2 => "PHP", 3 => "PHP"]
+// //??Result: [0 => "PHP", 1 => "PHP", 2 => "PHP", 3 => "PHP"]
 
 
 
@@ -596,7 +596,7 @@
 
 // in_array(value, array, strict);
 
-// * strict (optional): if true, also checks for type.
+//* strict (optional): if true, also checks for type.
 
 //! 🔹 Example:
 
@@ -609,7 +609,7 @@
 //     echo "Not found!";
 // }
 
-// // Output: Found!
+// //?? Output: Found!
 
 
 //! ✅ 2. array_search()
@@ -657,7 +657,7 @@
 //     echo "Key does not exist!";
 // }
 
-// // Output: Key exists!
+// //?? Output: Key exists!
 
 
 //! ✅ 4. isset()
@@ -668,8 +668,8 @@
 
 //! 🔹 Difference from array_key_exists():
 
-// * isset() returns false if the key exists but value is null.
-// * array_key_exists() returns true even if the value is null.
+//* isset() returns false if the key exists but value is null.
+//* array_key_exists() returns true even if the value is null.
 
 //! 🔹 Example:
 
@@ -1081,8 +1081,8 @@
 // }
 
 
-// * Preserves keys if used with one array.
-// * Can process multiple arrays in parallel. ([php.net][1])
+//* Preserves keys if used with one array.
+//* Can process multiple arrays in parallel. ([php.net][1])
 
 
 
@@ -1101,8 +1101,8 @@
 // print_r($evens)
 
 
-// * If no callback is passed, removes "empty" items (e.g. false, 0, null). ([php.net][2])
-// * Mode flags let you filter by keys or both key and value.
+//* If no callback is passed, removes "empty" items (e.g. false, 0, null). ([php.net][2])
+//* Mode flags let you filter by keys or both key and value.
 
 
 
@@ -1120,7 +1120,7 @@
 // $total = array_reduce($arr, 'sum', 0);
 // print_r($total)
 
-// * More general: both filtering and mapping patterns can be implemented using array_reduce. ([stackoverflow.com][3])
+//* More general: both filtering and mapping patterns can be implemented using array_reduce. ([stackoverflow.com][3])
 
 
 
@@ -1137,9 +1137,9 @@
 // $newArr = array_map('floor', $arr);
 // print_r($newArr)
 
-// * Handles one array only.
-// * Great for side-effects/logging.
-// * Can access both value & key; supports an optional third parameter. ([studytonight.com][4], [onlinephp.io][5], [geeksforgeeks.org][6])
+//* Handles one array only.
+//* Great for side-effects/logging.
+//* Can access both value & key; supports an optional third parameter. ([studytonight.com][4], [onlinephp.io][5], [geeksforgeeks.org][6])
 
 
 
@@ -1156,7 +1156,7 @@
 
 
 
-// * Merges new values into the first array but doesn’t filter or iterate items like the others.
+//* Merges new values into the first array but doesn’t filter or iterate items like the others.
 
 
 
@@ -1180,7 +1180,7 @@
 //!  🔢 1. count() / sizeof()
 
 //? Purpose: Return the number of elements in an array or objects implementing Countable ([php.net][1]).
-// * Usage:
+//* Usage:
 
 
 // $a = [1, 2, 3];
@@ -1195,7 +1195,7 @@
 //!  2. array_keys()
 
 //? Purpose: Retrieve an array of keys from a given array; can filter by a specific value ([php.net][2]).
-// * Usage:
+//* Usage:
 
 
 // $a = ['a' => 1, 'b' => 2];
@@ -1210,7 +1210,7 @@
 //!  3. array_values()
 
 //? Purpose: Return an indexed array of all values from the input array .
-// * Usage:
+//* Usage:
 
 
 // $a = ['a' => 1, 'b' => 2];
@@ -1222,7 +1222,7 @@
 //!  4. array_unique()
 
 //? Purpose: Remove duplicate values from the array (preserves keys, first occurrences kept) ([php.net][3]).
-// * Usage:
+//* Usage:
 
 
 // $a = [1, 2, 2, 3];
@@ -1234,7 +1234,7 @@
 //!  5. array_reverse()
 
 //? Purpose: Return a new array with elements in reverse order ([php.net][3]).
-// * Usage:
+//* Usage:
 
 
 // $a = [1, 2, 3];
@@ -1246,7 +1246,7 @@
 //!  🎯 6. array_sum()
 
 //? Purpose: Sum all values in a numeric array ([php.net][3]).
-// * Usage:
+//* Usage:
 
 
 // $a = [1, 2, 3, 4];
@@ -1258,7 +1258,7 @@
 //!  7. array_product()
 
 //? Purpose: Multiply all values in a numeric array ([php.net][3]).
-// * Usage:
+//* Usage:
 
 
 // $a = [2, 3, 4];
@@ -1270,7 +1270,7 @@
 //!  🔑 8. array_key_first() (PHP 7.3+)
 
 //? Purpose: Return the first key of the array without altering the internal pointer; returns null for empty arrays ([php.net][1]).
-// * Usage:
+//* Usage:
 
 
 // $a = ['x' => 1, 'y' => 2];
@@ -1282,7 +1282,7 @@
 //!  👑 9. array_key_last() (PHP 7.3+)
 
 //? Purpose: Return the last key of the array without altering pointer; null if empty ([php.net][1]).
-// * Usage:
+//* Usage:
 
 
 // $a = ['x' => 1, 'y' => 2];
@@ -1359,7 +1359,7 @@
 // $result = array_intersect_assoc($a1, $a2);
 // print_r($result)
 
-// // 'red' has different index, so not included
+// //?? 'red' has different index, so not included
 
 
 
@@ -1376,10 +1376,10 @@
 
 //! 💡 When to Use What
 
-// * Use array_diff() to filter out items based only on their values.
-// * Use array_diff_assoc() when exact key-value matches need removal.
-// * Use array_intersect() to find shared values across arrays.
-// * Use array_intersect_assoc() for pinpoint key-value overlap.
+//* Use array_diff() to filter out items based only on their values.
+//* Use array_diff_assoc() when exact key-value matches need removal.
+//* Use array_intersect() to find shared values across arrays.
+//* Use array_intersect_assoc() for pinpoint key-value overlap.
 
 
 
@@ -1389,12 +1389,12 @@
 //!  1. array_column()
 
 // ? Purpose: Extracts a specific “column” of values from within a multidimensional array or array of objects. ([w3schools.com][1], [reintech.io][2])
-// * Syntax:
+//* Syntax:
 
 
 //   array_column(array $input, mixed $column_key, mixed $index_key = null)
 
-// * Examples:
+//* Examples:
 
 
 // $records = [
@@ -1403,11 +1403,11 @@
 //     ['id' => 3809, 'first_name' => 'Joe',    'last_name' => 'Doe'],
 // ];
 // $lastNames = array_column($records, 'last_name');
-// // => [0=>'Griffin', 1=>'Smith', 2=>'Doe']
+// //?? => [0=>'Griffin', 1=>'Smith', 2=>'Doe']
 // print_r($lastNames);
 
 // $namesById = array_column($records, 'first_name', 'id');
-// // => [5698=>'Peter', 4767=>'Ben', 3809=>'Joe']
+// //?? => [5698=>'Peter', 4767=>'Ben', 3809=>'Joe']
 // print_r($namesById);
 
 
@@ -1416,7 +1416,7 @@
 //!  2. array_flip()
 
 // ? Purpose: Swaps keys and values in an array (values must be strings or ints). If duplicates exist, the last key wins. ([php.net][3])
-// * Example:
+//* Example:
 
 
 // $input = ['oranges', 'apples', 'pears'];
@@ -1436,7 +1436,7 @@
 //!  3. shuffle()
 
 // ? Purpose: Randomly shuffles array elements, reindexes numerically, and modifies in-place. Returns true on success. ([php.net][4])
-// * Example:
+//* Example:
 
 
 // $numbers = range(1, 10);
@@ -1445,7 +1445,7 @@
 
 //   // e.g. [5, 17, 1, 12, …] (keys reset to 0–19)
 
-// * Note: For associative arrays, keys are lost. To preserve key–value pairs, shuffle the keys separately:
+//* Note: For associative arrays, keys are lost. To preserve key–value pairs, shuffle the keys separately:
 
 
 // function shuffle_assoc(array $arr)
@@ -1466,11 +1466,11 @@
 
 //! ✅ Quick Reference
 
-// | Function         | Input                            | Output                         | Notes                                                             |
-// | ---------------- | -------------------------------- | ------------------------------ | ----------------------------------------------------------------- |
-// | array_column() | Multidimensional array / objects | Flat array of column values    | Optionally index by another column                                |
-// | array_flip()   | Associative / indexed array      | Keys & values swapped          | Last duplicate wins; only string/int values permitted as keys     |
-// | shuffle()      | Indexed array (by reference)     | Reordered in-place; keys reset | Returns true; not suitable for associative arrays unless custom |
+//!  Function          Input                             Output                          Notes                                                             
+//  ----------------  --------------------------------  ------------------------------  ----------------------------------------------------------------- 
+//  array_column()  Multidimensional array / objects  Flat array of column values     Optionally index by another column                                
+//  array_flip()    Associative / indexed array       Keys & values swapped           Last duplicate wins; only string/int values permitted as keys     
+//  shuffle()       Indexed array (by reference)      Reordered in-place; keys reset  Returns true; not suitable for associative arrays unless custom 
 
 
 
@@ -1596,3 +1596,921 @@
 
 ?>
 
+
+
+
+
+<?php
+
+//! 1. Using array()
+
+// //?? Indexed array
+// $fruits = array("Apple", "Banana", "Cherry");
+
+// //?? Associative array
+// $user = array("name" => "John", "age" => 25);
+
+
+//! 2. Using Short Syntax [] (PHP 5.4+ Recommended)
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// $user   = ["name" => "John", "age" => 25];
+
+
+//! 3. Using range()
+
+// Generates a sequence of values.
+
+// $numbers = range(1, 5); // [1, 2, 3, 4, 5]
+// $evens   = range(0, 10, 2); // [0, 2, 4, 6, 8, 10]
+
+
+//! 4. Using array_fill()
+
+// Creates an array with repeated values.
+
+// $filled = array_fill(0, 4, "A"); // ["A", "A", "A", "A"]
+
+
+//! 5. Using compact()
+
+// Converts variables into an associative array.
+
+// $name = "Alice";
+// $age  = 30;
+// $user = compact("name", "age"); // ["name" => "Alice", "age" => 30]
+
+
+//! 6. Creating a Multidimensional Array
+
+// $users = [
+//     ["name" => "John", "age" => 25],
+//     ["name" => "Alice", "age" => 30]
+// ];
+
+
+//? ✅ In short:
+
+//* Simple list? Use [] or array().
+//* Number sequence? Use range().
+//* Same value multiple times? Use array_fill().
+//* From existing variables? Use compact().
+//* Structured data? Use nested arrays.
+
+
+//! 1. Adding Elements
+
+//!  array_push()
+
+//* Adds one or more elements to the end of an array.
+
+
+// $fruits = ["Apple", "Banana"];
+// array_push($fruits, "Cherry", "Mango");
+// print_r($fruits);
+// //? ["Apple", "Banana", "Cherry", "Mango"]
+
+//!  array_unshift()
+
+//* Adds one or more elements to the beginning of an array.
+
+
+// $fruits = ["Apple", "Banana"];
+// array_unshift($fruits, "Mango");
+// print_r($fruits);
+// //? ["Mango", "Apple", "Banana"]
+
+//!  Direct Assignment
+
+//* You can add to the end simply by assigning:
+
+
+// $fruits[] = "Grapes"; // Adds at the end
+
+//! 2. Removing Elements
+
+//!  array_pop()
+
+//* Removes the last element from an array.
+
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// array_pop($fruits);
+// print_r($fruits);
+// //? ["Apple", "Banana"]
+
+//!  array_shift()
+
+//* Removes the first element from an array.
+
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// array_shift($fruits);
+// print_r($fruits);
+// //? ["Banana", "Cherry"]
+
+//!  unset()
+
+//* Removes a specific element by key or index.
+
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// unset($fruits[1]); // Removes "Banana"
+// print_r($fruits);
+// //? ["Apple", 2 => "Cherry"]  // index not reindexed automatically
+
+//!  array_splice()
+
+//* Removes/replaces elements anywhere in the array.
+
+
+// $fruits = ["Apple", "Banana", "Cherry", "Mango"];
+// array_splice($fruits, 1, 2); // Remove from index 1, two items
+// print_r($fruits);
+// //? ["Apple", "Mango"]
+
+//! Quick Summary Table
+
+//!  Function           Action                          Affects Keys?   
+
+//?  array_push()     Add at end                      No              
+//?  array_unshift()  Add at start                    Yes (reindexes) 
+//?  array_pop()      Remove last                     No              
+//?  array_shift()    Remove first                    Yes (reindexes) 
+//?  unset()          Remove by key/index             No reindex      
+//?  array_splice()   Remove/replace at any position  Yes             
+
+// 💡 WordPress Example:
+
+
+// $menu_items = ["Home", "About", "Blog"];
+// array_push($menu_items, "Contact"); // Add
+// array_shift($menu_items);           // Remove first ("Home")
+
+
+//!  1. Searching for a Value
+
+//!  in_array()
+
+//* Checks if a value exists in an array.
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// if (in_array("Banana", $fruits)) {
+//     echo "Found Banana!";
+// }
+
+//? ✅ Returns: true or false
+//? ✅ Use when: You just need to check if the value exists.
+
+//!  array_search()
+
+//* Searches for a value and returns its key/index.
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// $key = array_search("Cherry", $fruits);
+// echo $key; // 2
+
+//? ✅ Returns: key/index if found, false if not.
+//? ⚠ Tip: Use === to avoid confusing false with index 0.
+
+//!  2. Searching for a Key
+
+//!  array_key_exists()
+
+//* Checks if a key exists in an array (even if its value is null).
+
+// $user = ["name" => "John", "age" => null];
+// if (array_key_exists("age", $user)) {
+//     echo "Key exists!";
+// }
+
+//? ✅ Returns: true even if value is null.
+//? Use when: Key existence is more important than the value.
+
+//!  key_exists()
+
+//* Same as array_key_exists() — just an alias.
+
+//!  3. Checking for Null or Empty Values
+
+//!  isset()
+
+//* Checks if a key exists and is not null.
+
+// $user = ["name" => "John", "age" => null];
+// var_dump(isset($user["age"])); // false
+
+//? ⚠ Difference from array_key_exists() — isset() will be false if the value is null.
+
+//!  empty()
+
+//* Checks if a variable is empty ("", 0, null, false, []).
+
+// $user = ["name" => ""];
+// var_dump(empty($user["name"])); // true
+
+//? ⚠ Use with caution — it treats "0" as empty too.
+
+//!  4. Get All Keys or Values
+
+//!  array_keys()
+
+//* Returns all keys from an array.
+
+// $user = ["name" => "John", "age" => 25];
+// print_r(array_keys($user)); // ["name", "age"]
+
+//!  array_values()
+
+//* Returns all values from an array.
+
+// $user = ["name" => "John", "age" => 25];
+// print_r(array_values($user)); // ["John", 25]
+
+//!  Quick Table
+
+//*  Function              Purpose                              Returns              
+
+//?  in_array()          Check if a value exists              bool               
+//?  array_search()      Find key/index of a value            key/index or false 
+//?  array_key_exists()  Check if key exists (null allowed)   bool               
+//?  isset()             Check if key exists and is not null  bool               
+//?  empty()             Check if variable/element is empty   bool               
+//?  array_keys()        Get all keys                         array                
+//?  array_values()      Get all values                       array                
+
+// 💡 WordPress example:
+
+// $post_meta = get_post_meta(12); // returns array of meta keys and values
+
+// if (array_key_exists('featured', $post_meta)) {
+//     echo "Post has featured meta.";
+// }
+
+// if (in_array('special', $post_meta['tags'])) {
+//     echo "Post has 'special' tag.";
+// }
+
+
+//! 1. sort()
+
+// Sort by: Value (ascending)
+// Keeps keys: ❌ No (reindexes array)
+
+// $fruits = ["Banana", "Apple", "Cherry"];
+// sort($fruits);
+// print_r($fruits);
+// //? ["Apple", "Banana", "Cherry"]
+
+//! Where to use:
+
+//* When order matters but you don’t care about original keys.
+//* Example: Sorting a list of names before displaying them.
+
+//   Pros:
+//* Simple and fast.
+//   Cons:
+//* Destroys keys.
+
+//! 2. rsort()
+
+// Sort by: Value (descending)
+// Keeps keys: ❌ No
+
+// $fruits = ["Banana", "Apple", "Cherry"];
+// rsort($fruits);
+// print_r($fruits);
+// //? ["Cherry", "Banana", "Apple"]
+
+//! Where to use:
+
+//* When you need values in reverse order without keeping keys.
+
+//   Pros:
+//* Easy to reverse sort.
+//   Cons:
+//* Keys are lost.
+
+//! 3. asort()
+
+// Sort by: Value (ascending)
+// Keeps keys: ✅ Yes
+
+// $ages = ["John"=>25, "Alice"=>30, "Bob"=>20];
+// asort($ages);
+// print_r($ages);
+// //? ["Bob"=>20, "John"=>25, "Alice"=>30]
+
+//! Where to use:
+
+//* When sorting values but need to keep original keys (important for associative arrays).
+
+//   Pros:
+//* Keeps key-value relationship intact.
+//   Cons:
+//* Slightly slower than sort().
+
+//! 4. arsort()
+
+// Sort by: Value (descending)
+// Keeps keys: ✅ Yes
+
+// arsort($ages);
+// print_r($ages);
+// //? ["Alice"=>30, "John"=>25, "Bob"=>20]
+
+//! Where to use:
+
+//* Ranking systems, high-to-low sorting, keeping keys.
+
+//   Pros:
+//* Keeps data associations.
+//   Cons:
+//* Not for indexed arrays when keys don’t matter.
+
+//! 5. ksort()
+
+// Sort by: Key (ascending)
+// Keeps keys: ✅ Yes
+
+// $ages = ["John"=>25, "Alice"=>30, "Bob"=>20];
+// ksort($ages);
+// print_r($ages);
+// //? ["Alice"=>30, "Bob"=>20, "John"=>25]
+
+//! Where to use:
+
+//* Alphabetically sorting associative arrays by key.
+
+//   Pros:
+//* Great for quick alphabetical ordering.
+//   Cons:
+//* Doesn’t change order by values.
+
+//! 6. krsort()
+
+// Sort by: Key (descending)
+// Keeps keys: ✅ Yes
+
+// krsort($ages);
+// print_r($ages);
+// //? ["John"=>25, "Bob"=>20, "Alice"=>30]
+
+//! Where to use:
+
+//* Reverse alphabetical ordering by key.
+
+//   Pros:
+//* Easy reverse key sorting.
+//   Cons:
+//* Still ignores values.
+
+//! 7. usort()
+
+// Sort by: Value (custom comparison)
+// Keeps keys: ❌ No
+
+// $numbers = [5, 2, 9, 1];
+// usort($numbers, function($a, $b) {
+//     return $a <=> $b; // Ascending
+// });
+// print_r($numbers);
+// //? [1, 2, 5, 9]
+
+//! Where to use:
+
+//* Complex rules (e.g., sort by string length, multiple conditions).
+
+//   Pros:
+//* Fully customizable sorting logic.
+//   Cons:
+//* Keys are lost, more complex than simple sort functions.
+
+// ✅ WordPress Examples:
+
+//* asort() → Sorting post meta values while keeping post IDs.
+//* ksort() → Sorting settings array by option name.
+//* usort() → Sorting get_posts() results by custom rule (e.g., title length).
+
+// If you want, I can make you one table that compares all 7 with example output side-by-side so you can remember in seconds which one keeps keys and when to use it.
+// Do you want me to prepare that?
+
+// Alright — in PHP, combining and splitting arrays is about merging them together or breaking them into smaller parts.
+
+//! 1. Combining Arrays
+
+//!  a) array_merge()
+
+// Merges two or more arrays.
+
+// $arr1 = ["Apple", "Banana"];
+// $arr2 = ["Cherry", "Date"];
+// $result = array_merge($arr1, $arr2);
+// print_r($result);
+// //? ["Apple", "Banana", "Cherry", "Date"]
+
+//* Associative arrays: Keys with same name get overwritten.
+//* Indexed arrays: Keys are reindexed.
+
+//!  b) + (Union Operator)
+
+// Combines arrays without reindexing and keeps first array’s values for duplicate keys.
+
+// $arr1 = [0 => "Apple", 1 => "Banana"];
+// $arr2 = [1 => "Cherry", 2 => "Date"];
+// $result = $arr1 + $arr2;
+// print_r($result);
+// //? [0 => "Apple", 1 => "Banana", 2 => "Date"]
+
+//!  c) array_combine()
+
+// Creates an array by using one array for keys and another for values.
+
+// $keys = ["name", "age"];
+// $values = ["Alice", 30];
+// $result = array_combine($keys, $values);
+// print_r($result);
+// //? ["name" => "Alice", "age" => 30]
+
+//*(Both arrays must have the same number of elements.)*
+
+//!  d) array_merge_recursive()
+
+// Like array_merge(), but merges values with the same keys into an array.
+
+// $arr1 = ["color" => "red", "size" => "M"];
+// $arr2 = ["color" => "blue", "shape" => "circle"];
+// $result = array_merge_recursive($arr1, $arr2);
+// print_r($result);
+// //? ["color" => ["red", "blue"], "size" => "M", "shape" => "circle"]
+
+//! 2. Splitting Arrays
+
+//!  a) array_chunk()
+
+// Splits array into chunks of given size.
+
+// $fruits = ["Apple", "Banana", "Cherry", "Date"];
+// $result = array_chunk($fruits, 2);
+// print_r($result);
+// /*
+// [
+//     ["Apple", "Banana"],
+//     ["Cherry", "Date"]
+// ]
+//*/
+
+//!  b) array_slice()
+
+// Extracts a portion of an array.
+
+// $fruits = ["Apple", "Banana", "Cherry", "Date"];
+// $result = array_slice($fruits, 1, 2);
+// print_r($result);
+// //? ["Banana", "Cherry"]
+
+//!  c) explode()
+
+// Splits a string into an array.
+
+// $str = "apple,banana,cherry";
+// $result = explode(",", $str);
+// print_r($result);
+// //? ["apple", "banana", "cherry"]
+
+//!  d) str_split()
+
+// Splits a string into an array of characters.
+
+// $str = "Hello";
+// $result = str_split($str);
+// print_r($result);
+// //? ["H", "e", "l", "l", "o"]
+
+//!  e) preg_split()
+
+// Splits string using a regular expression.
+
+// $str = "apple | banana | cherry";
+// $result = preg_split("/\s*\|\s*/", $str);
+// print_r($result);
+// //? ["apple", "banana", "cherry"]
+
+//! 💡 Where to Use in WordPress
+
+//* explode() → Splitting comma-separated tags into an array.
+//* array_merge() → Combining multiple meta values or option arrays.
+//* array_chunk() → Breaking large query results into smaller display groups.
+
+// If you want, I can make you a cheat sheet table showing all combining & splitting functions side-by-side with "Keeps keys?" and "Typical Use Case" so you can remember them quickly.
+// Do you want me to prepare that?
+
+
+
+
+
+//!  1. array_map()
+
+//? Purpose: Applies a callback function to each element of one (or more) arrays.
+
+// $numbers = [1, 2, 3];
+// $squared = array_map(function($n) {
+//     return $n * $n;
+// }, $numbers);
+
+// print_r($squared);
+// //? [1, 4, 9]
+
+//? Where to use:
+
+//* Transform data without writing loops.
+//* Example: Converting all titles from lowercase to uppercase in a WordPress post array.
+
+//? Pros: No manual loop, clean code.
+//? Cons: Always creates a new array (doesn’t modify original).
+
+//!  2. array_filter()
+
+//? Purpose: Filters array elements using a callback function.
+
+// $numbers = [1, 2, 3, 4, 5];
+// $even = array_filter($numbers, function($n) {
+//     return $n % 2 === 0;
+// });
+
+// print_r($even);
+// //? [1 => 2, 3 => 4]
+
+//? Where to use:
+
+//* Removing unwanted elements.
+//* Example: Filtering posts with a certain meta value in WP.
+
+//? Pros: Keeps original keys.
+//? Cons: You need array_values() if you want reindexing.
+
+//!  3. array_reduce()
+
+//? Purpose: Iteratively reduces an array to a single value.
+
+// $numbers = [1, 2, 3, 4];
+// $sum = array_reduce($numbers, function($carry, $item) {
+//     return $carry + $item;
+// }, 0);
+
+// echo $sum; // 10
+
+//? Where to use:
+
+//* Summing, counting, or combining into a single result.
+//* Example: Calculating total price of WooCommerce cart items.
+
+//? Pros: Great for aggregating values.
+//? Cons: Less readable for beginners.
+
+//!  4. array_walk()
+
+//? Purpose: Applies a function to each element in place (modifies array directly).
+
+// $fruits = ["apple", "banana"];
+// array_walk($fruits, function(&$item) {
+//     $item = ucfirst($item);
+// });
+
+// print_r($fruits);
+// //? ["Apple", "Banana"]
+
+//? Where to use:
+
+//* Modify original array elements directly.
+//* Example: Sanitizing meta values before saving in WP.
+
+//? Pros: Modifies in place.
+//? Cons: Slower than foreach in some cases.
+
+//!  5. array_replace()
+
+//? Purpose: Replaces values in the first array with values from following arrays (by key).
+
+// $a1 = ["a" => "red", "b" => "green"];
+// $a2 = ["a" => "blue", "c" => "yellow"];
+// $result = array_replace($a1, $a2);
+
+// print_r($result);
+// //? ["a" => "blue", "b" => "green", "c" => "yellow"]
+
+//? Where to use:
+
+//* Updating default settings with user overrides.
+//* Example: Merging WP theme default options with customizer settings.
+
+//? Pros: Keeps keys intact.
+//? Cons: Only works by key match, not by value.
+
+// ✅ WordPress Real Uses
+
+//* array_map() → Sanitize post titles in bulk before display.
+//* array_filter() → Filter menu items by role permission.
+//* array_reduce() → Calculate total word count of all posts in a query.
+//* array_walk() → Escape HTML characters in meta fields.
+//* array_replace() → Override theme defaults with child theme settings.
+
+//!  1. count()
+
+//? Purpose: Returns the number of elements in an array.
+
+// $fruits = ["Apple", "Banana", "Cherry"];
+// echo count($fruits); // 3
+
+//* Use: Count posts, menu items, etc.
+//* Note: Also works on objects implementing Countable.
+
+
+//!  2. sizeof()
+
+//? Purpose: Alias of count() — works exactly the same.
+
+// echo sizeof($fruits); // 3
+
+//* Use: Just a stylistic alternative.
+//* Note: count() is more common in codebases.
+
+
+//!  3. array_keys()
+
+//? Purpose: Returns all keys from an array.
+
+// $person = ["name" => "John", "age" => 25];
+// print_r(array_keys($person));
+// //? ["name", "age"]
+
+//* Use: Get all meta field names, taxonomy slugs, etc.
+
+
+//!  4. array_values()
+
+//? Purpose: Returns all values from an array (without keys).
+
+// print_r(array_values($person));
+// //? ["John", 25]
+
+//* Use: Extract only values for export or search.
+
+
+//!  5. array_unique()
+
+//? Purpose: Removes duplicate values from an array.
+
+// $nums = [1, 2, 2, 3];
+// print_r(array_unique($nums));
+// //? [0 => 1, 1 => 2, 3 => 3]
+
+//* Use: Unique post IDs, unique tags.
+//* Note: Keeps first occurrence and keys.
+
+
+//!  6. array_reverse()
+
+//? Purpose: Reverses array order.
+
+// print_r(array_reverse($fruits));
+// //? ["Cherry", "Banana", "Apple"]
+
+//* Use: Reverse post order, recent comments list.
+
+
+//!  7. array_sum()
+
+//? Purpose: Adds up all numeric values in an array.
+
+// $nums = [2, 4, 6];
+// echo array_sum($nums); // 12
+
+//* Use: Cart total, total likes, etc.
+
+
+//!  8. array_product()
+
+//? Purpose: Multiplies all numeric values in an array.
+
+// echo array_product($nums); // 48
+
+//* Use: Price × quantity calculations.
+
+
+//!  9. array_key_first() *(PHP 7.3+)*
+
+//? Purpose: Gets the first key of an array.
+
+// echo array_key_first($person); // name
+
+//* Use: Get the first setting or field name.
+
+
+//!  10. array_key_last() *(PHP 7.3+)*
+
+//? Purpose: Gets the last key of an array.
+
+// echo array_key_last($person); // age
+
+//* Use: Find last field or menu item key.
+
+
+// 💡 WordPress Real Uses
+
+//* count() / sizeof() → Number of posts from a WP_Query.
+//* array\_keys() → Get registered shortcode tags.
+//* array\_values() → List role names.
+//* array\_unique() → Remove duplicate category IDs.
+//* array\_reverse() → Show latest posts first from a static array.
+//* array\_sum() / array\_product() → WooCommerce price calculations.
+//* array\_key\_first() / array\_key\_last() → Get first/last meta key for a post.
+
+
+//! 1. array_diff()
+
+//* Purpose: Returns values from the first array that are not in the other arrays. *(Compares by value only.)*
+
+// $a1 = ["a" => "red", "b" => "green", "c" => "blue"];
+// $a2 = ["yellow", "red", "blue"];
+
+// print_r(array_diff($a1, $a2));
+// // ["b" => "green"]
+
+//? Use: Find posts in one list but not another.
+//? Keys kept? ✅ Yes.
+//? Compares: Values only.
+
+
+//! 2. array_diff_assoc()
+
+//* Purpose: Like array_diff() but compares keys and values.
+
+// $a1 = ["a" => "red", "b" => "green", "c" => "blue"];
+// $a2 = ["a" => "red", "b" => "blue"];
+
+// print_r(array_diff_assoc($a1, $a2));
+// // ["b" => "green", "c" => "blue"]
+
+//? Use: Detect setting changes in WP options arrays.
+//? Keys kept? ✅ Yes.
+//? Compares: Keys + values.
+
+
+//! 3. array_intersect()
+
+//* Purpose: Returns values from the first array that are present in all other arrays. *(Compares by value only.)*
+
+// $a1 = ["a" => "red", "b" => "green", "c" => "blue"];
+// $a2 = ["b" => "green", "c" => "yellow"];
+
+// print_r(array_intersect($a1, $a2));
+// // ["b" => "green"]
+
+//? Use: Find common categories between posts.
+//? Keys kept? ✅ Yes.
+//? Compares: Values only.
+
+
+//! 4. array_intersect_assoc()
+
+//* Purpose: Like array_intersect() but compares keys and values.
+
+// $a1 = ["a" => "red", "b" => "green", "c" => "blue"];
+// $a2 = ["a" => "red", "b" => "blue"];
+
+// print_r(array_intersect_assoc($a1, $a2));
+// // ["a" => "red"]
+
+//? Use: Check if two WP option arrays have the exact same key-value pairs.
+//? Keys kept? ✅ Yes.
+//? Compares: Keys + values.
+
+
+//!# 🔹 Key Difference Table
+
+//*  Function                   Compares By  Keeps Keys  Finds...          
+
+//?  array_diff()             Value        ✅           Differences       
+//?  array_diff_assoc()       Key + Value  ✅           Differences       
+//?  array_intersect()        Value        ✅           Common elements   
+//?  array_intersect_assoc()  Key + Value  ✅           Common key-values 
+
+
+// 💡 WordPress Examples
+
+// * array\_diff() → Posts in draft but not published.
+// * array\_diff\_assoc() → Theme default settings vs. user customizer settings.
+// * array\_intersect() → Tags common to two posts.
+// * array\_intersect\_assoc() → Check if two users have identical meta fields.
+
+
+
+
+
+
+
+
+
+
+//! 1.  Using array()
+//! 2.  Using Short Syntax [] (PHP 5.4+ Recommended)
+//! 3.  Using range()
+//! 4.  Using array_fill()
+//! 5.  Using compact()
+//! 6.  Creating a Multidimensional Array
+//! 7.  array_push()
+//! 8.  array_unshift()
+//! 9.  array_pop()
+//! 10. array_shift()
+//! 11. unset()
+//! 12. array_splice()
+//! 13. in_array()
+//! 14. array_search()
+//! 15. array_key_exists()
+//! 16. isset()
+//! 17. empty()
+//! 18. array_keys()
+//! 19. array_values()
+//! 20. sort()
+//! 21. rsort()
+//! 22. asort()
+//! 23. arsort()
+//! 24. ksort()
+//! 25. krsort()
+//! 26. usort()
+//! 27. array_merge()
+//! 28. + (Union Operator)
+//! 29. array_combine()
+//! 30. array_merge_recursive()
+//! 31. array_chunk()
+//! 32. array_slice()
+//! 33. explode()
+//! 34. str_split()
+//! 35. preg_split()
+//! 36. array_map()
+//! 37. array_filter()
+//! 38. array_reduce()
+//! 39. array_walk()
+//! 40. array_replace()
+//! 41. count()
+//! 42. sizeof()
+//! 43. array_keys()
+//! 44. array_values()
+//! 45. array_unique()
+//! 46. array_reverse()
+//! 47. array_sum()
+//! 48. array_product()
+//! 49. array_key_first()
+//! 50. array_key_last()
+//! 51. count() 
+//! 52. sizeof() 
+//! 53. array_keys() 
+//! 54. array_values()
+//! 55. array_unique()
+//! 56. array_reverse()
+//! 57. array_sum()
+//! 58. array_product()
+//! 59. array_key_first()
+//! 60. array_key_last()
+//! 61. array_diff()
+//! 62. array_diff_assoc()
+//! 63. array_intersect()
+//! 64. array_intersect_assoc()
+//! 65. array_column()
+//! 66. array_flip()
+//! 67. shuffle()
+
+
+
+
+//! Function                    Why & Where Used in WordPress                                                               
+
+//? array() / \[]               Creating arrays for options, settings, query arguments (`WP_Query`, menus, widgets).        
+//? compact()                   Used to pass local variables to template parts and functions (e.g., `get_template_part()`). 
+//? array\_push() / \[]         Add new values to an array (e.g., enqueue scripts, append CSS classes).                     
+//? unset()                     Remove items from arrays (e.g., deregister post types, remove menu items).                  
+//? in\_array()                 Check if a role, post type, or capability exists.                                           
+//? array\_search()             Find a specific key or value (e.g., locate a meta key in an array).                         
+//? array\_key\_exists()        Ensure a key is set in `$args` or `$meta`.                                                  
+//? isset()                     Check if an array key exists before use (avoids PHP warnings).                              
+//? empty()                     Check if an array or option is empty before rendering output.                               
+//? array\_keys()               Get keys from arrays (often for loops or sanitization).                                     
+//? array\_values()             Reset array values for iteration.                                                           
+//? sort() / asort() / ksort()  Sort post data, menu arrays, or options alphabetically.                                     
+//? array\_merge()              Merge user options with defaults in theme/plugin settings.                                  
+//? + (Union Operator)          Merge arrays without overwriting existing keys.                                             
+//? array\_combine()            Combine IDs and labels for select dropdowns.                                                
+//? array\_slice()              Pagination, trimming arrays to a certain number of posts.                                   
+//? explode() / implode()       Convert comma-separated strings to arrays and back (tags, categories).                      
+//? array\_map()                Apply `esc_html()` or `sanitize_text_field()` to every array item.                          
+//? array\_filter()             Remove empty/null values from settings arrays.                                              
+//? count() / sizeof()          Count posts, users, or menu items.                                                          
+//? array\_unique()             Remove duplicate meta values or taxonomy terms.                                             
+//? array\_reverse()            Reverse menu or post order.                                                                 
+//? array\_diff()               Compare lists of capabilities, post types, or taxonomies.                                   
+//? array\_intersect()          Find common taxonomies, roles, or terms between objects.                                    
+//? array\_column()             Get all post titles or IDs from a multidimensional array.                                   
+//? shuffle()                   Randomize post display or featured image selection.                                         
+
+?>

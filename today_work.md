@@ -126,6 +126,20 @@
 <!--*  foreach            Loop through arrays  -->
 
 
+<!--! Output  -->
+
+<!-- ? type -->
+
+<!--* echo          Prints one or more strings (fast, no return value).                                -->     
+<!--* print         Similar to echo, but always returns 1 (slower, but can be used in expressions).  -->     
+<!--* print_r()     Prints human-readable info for arrays/objects.                                     -->     
+<!--* var_dump()    Prints detailed info including **data types** and **lengths**.                     -->     
+<!--* var_export()  Prints or returns valid PHP code representation of a variable.                     -->     
+<!--* printf()      Outputs a formatted string.                                                        -->     
+<!--* sprintf()     Returns a formatted string (does not print directly).                              -->     
+
+
+
 <!--! function  -->
 
 <!-- ? type -->
@@ -545,54 +559,6 @@
 <!--*      AJAX XML                                     -->
 <!--*      AJAX Live Search                             -->
 <!--*      AJAX Poll                                    -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
- Today i have learn this topic (25-06-2025):-   
-=> MySQL Date Functions
-=> MySQL ALTER
-=> MySQL DROP & TRUNCATE Table 
-=> Consuming and Creating RESTful APIs with PHP
-=> AJAX Intro
-=> AJAX PHP
-=> AJAX Database
-=> AJAX XML
-=> AJAX Live Search
-=> AJAX Poll
--->
-
-
-<!-- MySQL COMMIT & ROLLBACK  -->
-
-
-
-
-
-
-
-
 
 
 

@@ -1021,7 +1021,7 @@
 //?  Static properties are shared         All instances share the same static property 
 
 //! 🔄 Comparing with Instance Properties
-
+ 
 //*  Feature                Static Property         Instance Property        
 
 //?  Belongs to             Class                   Object                   
